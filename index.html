@@ -1,36 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ma liste des tâches</title>   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css" />
 </head>
 <body>
 
-<h1>Ma liste des tâches</h1>
+  <div class="container">
+    <h1>📝 Ma ToDo List</h1>
 
-<div class="container">
-  <div class="champ">
-
- <input type="text" id="taskinput" placeholder="Ajouter une tâche">
- <button onclick="addTask()"> 
-            <ion-icon name="add-circle-outline"></ion-icon> Ajouter 
-
-        </button>
+    <div class="input-section">
+      <input type="text" id="taskinput" placeholder="Ajouter une tâche..." />
+      <button onclick="addTask()">Ajouter</button>
     </div>
 
     <ul id="tasklist"></ul>
-</div>
 
+    <div class="footer">
+      <p>Toutes les tâches sont automatiquement sauvegardées  meme si on actualise  ✔️</p>
+    </div>
+  </div>
 
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
